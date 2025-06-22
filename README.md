@@ -25,4 +25,8 @@ matplotlib>=3.3.0
 检测视频文件:python detect.py --source /path/to/your/video.mp4
 使用摄像头实时检测:python detect.py --source 0
 检测结果将默认保存在 output/ 文件夹下。您也可以通过 --weights 参数指定不同的权重文件，通过 --output 指定不同的输出路径。2. 模型训练 (可选)如果您想使用自己的数据集进行训练，可以使用 train.py 脚本。准备数据集: 按照YOLO格式组织您的数据集，并创建相应的数据配置文件（如 my_data.data）和类别文件（.names）。开始训练:python train.py --data data/ccpd.data --cfg models/yolov3.cfg --weights weights/yolov3_10000.weights --epochs 100
+<<<<<<< HEAD
 --data: 数据集配置文件路径。--cfg: 模型配置文件路径。--weights: 预训练权重路径（用于微调）。如果想从零开始训练，可以不指定此参数。--epochs: 训练的总轮数。📝 未来工作 (TODO)[ ] 增加数据增强策略以提升模型的鲁棒性。[ ] 测试并对比不同YOLO系列模型（如YOLOv5, YOLOv7）在该数据集上的性能。[ ] 封装成一个更易于调用的类或API。[ ] 增加一个简单的Web界面用于上传图片进行在线识别。🙏 致谢本项目基于 ultralytics/yolov3 的代码结构。数据集来源于 CCPD (Chinese City Parking Dataset)。📄 许可证本项目采用 MIT License 开源许可证。
+=======
+--data: 数据集配置文件路径。--cfg: 模型配置文件路径。--weights: 预训练权重路径（用于微调）。如果想从零开始训练，可以不指定此参数。--epochs: 训练的总轮数。📝 未来工作 (TODO)[ ] 增加数据增强策略以提升模型的鲁棒性。[ ] 测试并对比不同YOLO系列模型（如YOLOv5, YOLOv7）在该数据集上的性能。[ ] 封装成一个更易于调用的类或API。[ ] 增加一个简单的Web界面用于上传图片进行在线识别。🙏 致谢本项目基于 ultralytics/yolov3 的代码结构。数据集来源于 CCPD (Chinese City Parking Dataset)。📄 许可证本项目采用 MIT License 开源许可证。
+
